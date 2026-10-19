@@ -41,7 +41,7 @@
     <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-booking data-days="7" data-closed="" data-slots="10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00" data-message="Здравствуйте! Хочу записаться в Перфоманс авто: {услуга}, {день} в {время}. Марку и модель автомобиля напишу ниже." onsubmit="return false">
       <h2 class="s-widget__title">Запись на время</h2>
       <fieldset><legend>Услуга</legend>
-        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Оклейка бронепленкой: зоны риска" data-price="" data-from="" data-min="" checked><span>Оклейка бронепленкой: зоны риска</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Полная оклейка кузова" data-price="" data-from="" data-min=""><span>Полная оклейка кузова</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Керамическое покрытие" data-price="" data-from="" data-min=""><span>Керамическое покрытие</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Полировка кузова" data-price="" data-from="" data-min=""><span>Полировка кузова</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Тонировка" data-price="" data-from="" data-min=""><span>Тонировка</span><b></b></label></div>
+        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Бронирование автомобиля плёнкой" data-price="30000" data-from="" data-min="" checked><span>Бронирование автомобиля плёнкой</span><b>30 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Оклейка капота плёнкой" data-price="16000" data-from="" data-min=""><span>Оклейка капота плёнкой</span><b>16 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Тонировка передних стёкол" data-price="3000" data-from="" data-min=""><span>Тонировка передних стёкол</span><b>3 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Автохимчистка" data-price="8000" data-from="" data-min=""><span>Автохимчистка</span><b>8 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Нанополировка автомобиля" data-price="10000" data-from="" data-min=""><span>Нанополировка автомобиля</span><b>10 000 ₽</b></label></div>
       </fieldset>
       <fieldset><legend>День</legend><div class="s-chips" data-s-days></div></fieldset>
       <fieldset><legend>Время</legend><div class="s-chips" data-s-times></div></fieldset>
@@ -60,27 +60,44 @@
     <header class="s-section__head"><h2>Что входит в работу</h2></header>
     <div class="s-incl">
       <div><h3>Входит</h3><ul><li>Осмотр автомобиля и рекомендации, что оклеить и обработать</li><li>Фотоотчёт на каждом этапе</li><li>Гарантия на выполненные работы</li><li>Коррекция плёнки при необходимости</li></ul></div>
-      <div><h3>Отдельно, если нужно</h3><ul><li>Нетиповые работы – оценка при осмотре</li><li>Цена – назовём при записи по вашему автомобилю</li></ul></div>
+      <div><h3>Отдельно, если нужно</h3><ul><li>Нетиповые работы – оценка при осмотре</li><li>Цена на ваш автомобиль – уточняем при записи</li></ul></div>
     </div>
   </section>
 
   <section class="s-section s-reveal" id="prices">
-    <header class="s-section__head"><h2>Услуги и цены</h2><p>Цену на конкретный автомобиль называем при записи – она зависит от марки, кузова и объёма работ.</p></header>
+    <header class="s-section__head"><h2>Услуги и цены</h2><p>Цены из карточки студии на Яндекс.Картах, они давно не обновлялись. Точную сумму на ваш автомобиль назовём при записи: она зависит от марки, кузова и объёма работ.</p></header>
     <div class="s-board"><div class="s-board__group">
-      <h3 class="s-board__title">Защита кузова</h3>
+      <h3 class="s-board__title">Бронирование и оклейка</h3>
       <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Оклейка бронепленкой: зоны риска<em>передняя часть автомобиля</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
-        <li class="s-board__row"><span class="s-board__name">Полная оклейка кузова бронепленкой</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
-        <li class="s-board__row"><span class="s-board__name">Матовая плёнка</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
-        <li class="s-board__row"><span class="s-board__name">Керамическое покрытие</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Бронирование автомобиля плёнкой</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">30 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Бронирование фар</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">4 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Бронирование стёкол</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">17 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Оклейка капота плёнкой</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">16 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Оклейка крыши плёнкой</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">10 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Оклейка антигравийной плёнкой</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">10 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Оклейка виниловой плёнкой</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">70 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Оклейка глянцевой плёнкой</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">80 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Оклейка матовой плёнкой</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">100 000 ₽</span></li>
       </ul>
     </div>
 <div class="s-board__group">
-      <h3 class="s-board__title">Уход и тонировка</h3>
+      <h3 class="s-board__title">Тонировка</h3>
       <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Полировка кузова</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
-        <li class="s-board__row"><span class="s-board__name">Тонировка</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
-        <li class="s-board__row"><span class="s-board__name">Детейлинг мойка и чистка салона</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Тонировка передних стёкол</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">3 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Тонировка задних стёкол</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">5 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Тонировка лобового стекла</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">4 000 ₽</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Уход и защита покрытий</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Автохимчистка</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">8 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Нанесение покрытия Ceramic Pro</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">8 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Кварцевое покрытие</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">7 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Нанополировка автомобиля</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">10 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Полировка бампера</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Полировка фар</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Полировка детали</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">500 ₽</span></li>
       </ul>
     </div></div>
     <p class="s-note">Каждый этап работ сопровождается фотоотчётом, на выполненные работы действует гарантия.</p>
@@ -120,7 +137,7 @@
 
   <section class="s-section s-reveal">
     <header class="s-section__head"><h2>Частые вопросы</h2></header>
-    <div class="s-faq"><details><summary>Сколько стоит работа?</summary><p>Цену назовём при записи по вашему автомобилю: она зависит от марки, кузова и объёма работ.</p></details><details><summary>Какая гарантия на работы?</summary><p>На выполненные работы действует гарантия. Срок назовём при записи.</p></details><details><summary>Как проходит приём?</summary><p>Приём по предварительной записи, открываемся в 10:00. Запишитесь на сайте или напишите в мессенджер.</p></details></div>
+    <div class="s-faq"><details><summary>Сколько стоит работа?</summary><p>Ориентиры – в прайсе выше, они из карточки на Яндекс.Картах. Точную цену на ваш автомобиль назовём при записи: она зависит от марки, кузова и объёма работ.</p></details><details><summary>Какая гарантия на работы?</summary><p>На выполненные работы действует гарантия. Срок назовём при записи.</p></details><details><summary>Как проходит приём?</summary><p>Приём по предварительной записи, открываемся в 10:00. Запишитесь на сайте или напишите в мессенджер.</p></details></div>
   </section>
 
   <section class="s-section s-final s-reveal" id="contacts">
